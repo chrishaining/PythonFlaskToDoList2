@@ -23,3 +23,4 @@ The app uses:
 * pip3 for installing packages
 * Flask
 * Bootstrap
+* SQLite using the SQL Alchemy ORM
