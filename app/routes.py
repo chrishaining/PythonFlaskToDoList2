@@ -17,5 +17,5 @@ def create_task():
     newTask = Task(title=taskTitle, description=taskDescription, user=user)
     db.session.add(newTask)
     db.session.commit()
-    print(request.form)
     return redirect('/tasks') 
+
