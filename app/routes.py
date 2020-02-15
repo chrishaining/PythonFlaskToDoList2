@@ -1,5 +1,5 @@
 from app import app, db
-from app.models import User, Task
+from app.models import User, Task, Quotation
 from flask import render_template, request, redirect
 
 
@@ -25,4 +25,9 @@ def update(task_id):
     task.done = True 
     db.session.commit()
     return redirect('/tasks')
+
+@app.route('/quotations')
+def quotations():
+    quotations = Quotation.query.all()
+    return render_template('quotations.html', title="Quotations", quotations=quotations)
 

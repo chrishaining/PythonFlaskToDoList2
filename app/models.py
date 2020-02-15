@@ -16,3 +16,10 @@ class Task(db.Model):
 
     def __repr__(self):
         return '<Task {}>'.format(self.title)
+
+class Quotation(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    contents = db.Column(db.Text())
+
+    def __repr__(self):
+        return '<Task {}>'.format(self.contents)

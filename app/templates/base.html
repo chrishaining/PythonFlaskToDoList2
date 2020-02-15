@@ -12,11 +12,22 @@
 </head>
 
 <body>
-    <ul>
-        <li><a href="/tasks">Home</a></li>
-        <!-- <li><a href="/tasks/add">Add a Task</a></li> -->
 
-    </ul>
+    <div class="header">
+        <nav class="navbar fixed-top navbar-expand-sm">
+            <button class="navbar-toggler hidden-sm" data-toggle="collapse" data-target="#navbarMenu">
+                        <span class="navbar-toggler-icon">&#9776</span>
+                    </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav">
+                    <li><a href="/tasks">Home</a></li>
+                    <li><a href="/quotations">Quotations</a></li>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
     <hr> {% block content %}{% endblock %}
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
