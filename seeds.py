@@ -24,3 +24,4 @@ tasks = Task.query.all()
 print(tasks)
 task_user = Task.query.get(1).user
 print(user.username)
+
