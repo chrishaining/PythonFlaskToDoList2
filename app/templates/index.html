@@ -13,7 +13,12 @@
     {% for task in tasks %}
     <p>
         {{ task.title }}: {{ task.description }} {% if task.done %}
-        <span> &#9989;</span> {% endif %}
+        <span> &#9989;</span> {% else %}
+        <span>
+            <form style="display:inline" action="/tasks/{{task.id}}" method="POST">
+              <input type="submit" value="Mark as complete">
+            </form>
+          </span> {% endif %}
     </p>
 </div>
 {% endfor %} {% endblock %}
