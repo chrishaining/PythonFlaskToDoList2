@@ -2,16 +2,27 @@ body {
     background-color: #358597
 }
 
-h1 {
+h1,
+h2,
+h3 {
     color: #F4A896
 }
 
-h2 {
-    color: #F4A896
+a {
+    color: silver;
+    padding: 10px
 }
+
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* navbar */
 
 .navbar-toggler-icon {
-    color: #358597;
+    color: #F4A896;
     padding-left: 20px;
     font-size: 200%
 }
@@ -20,24 +31,64 @@ h2 {
     color: #F4A896
 }
 
+.navbar-nav {
+    list-style-type: none;
+}
+
+
+/* rows and columns */
+
 .row {
     margin-left: 20px;
-    margin-right: 20 px;
+    margin-right: 20px;
     margin-bottom: 20px;
     padding: 20px;
     border: solid 5px #F4A896;
 }
 
-button {
-    background-color: #F4A896;
-    color: #358597
-}
+
+/* form */
 
 form {
     margin: 10px;
     padding: 10 px;
 }
 
+label {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #F4A896
+}
+
+input,
+textarea {
+    background-color: silver;
+    border: solid 1px #f4A896;
+    width: 100%
+}
+
+
+/* table */
+
 .table {
-    border: solid black 2px
+    color: silver;
+    padding: 10px
+}
+
+td {
+    padding: 10px;
+    border: solid #F4A896 2px;
+}
+
+
+/* buttons */
+
+button.save.btn.btn-default {
+    background-color: #F4A896;
+    color: #358597;
+    margin: 10px
+}
+
+button.save.btn.btn-default:hover {
+    color: white;
 }
