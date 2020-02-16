@@ -1,13 +1,15 @@
 from app import app, db
 from app.models import User, Task, Quotation
 from flask import render_template, request, redirect
+import random
 
 
 @app.route('/tasks')
 def index():
     user = User.query.get(1)
     tasks = user.tasks
-    return render_template('index.html', title='Home', user=user, tasks=tasks)
+    quotations = Quotation.query.all()
+    return render_template('index.html', title='Home', user=user, tasks=tasks, quotations=quotations)
 
 @app.route('/tasks', methods=['POST'])
 def create_task():
@@ -29,5 +31,6 @@ def update(task_id):
 @app.route('/quotations')
 def quotations():
     quotations = Quotation.query.all()
-    return render_template('quotations.html', title="Quotations", quotations=quotations)
+    random_quotation = random.choice(quotations)
+    return render_template('quotations.html', title="Quotations", random_quotation=random_quotation)
 

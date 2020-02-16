@@ -1,13 +1,17 @@
+body {
+    background-color: #358597
+}
+
 h1 {
     color: #F4A896
 }
 
 h2 {
-    color: white
+    color: #F4A896
 }
 
 .navbar-toggler-icon {
-    color: #F4A896;
+    color: #358597;
     padding-left: 20px;
     font-size: 200%
 }
@@ -18,6 +22,7 @@ h2 {
 
 .row {
     margin-left: 20px;
+    margin-right: 20 px;
     margin-bottom: 20px;
     padding: 20px;
     border: solid 5px #F4A896;
@@ -26,4 +31,13 @@ h2 {
 button {
     background-color: #F4A896;
     color: #358597
+}
+
+form {
+    margin: 10px;
+    padding: 10 px;
+}
+
+.table {
+    border: solid black 2px
 }

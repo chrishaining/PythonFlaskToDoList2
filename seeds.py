@@ -26,14 +26,12 @@ quotation2 = Quotation(contents="Don't be sad.")
 quotation3 = Quotation(contents="Life is good.")
 quotation4 = Quotation(contents="Life is not bad.")
 quotation5 = Quotation(contents="You're very lucky.")
-quotation6 = Quotation(contents="You're not that unlucky.")
 
 db.session.add(quotation1)
 db.session.add(quotation2)
 db.session.add(quotation3)
 db.session.add(quotation4)
 db.session.add(quotation5)
-db.session.add(quotation6)
 
 db.session.commit()
 
@@ -42,5 +40,5 @@ print(tasks)
 task_user = Task.query.get(1).user
 print(user.username)
 
-quotations = Quotation.query.all()
+# quotations = Quotation.query.all()
 

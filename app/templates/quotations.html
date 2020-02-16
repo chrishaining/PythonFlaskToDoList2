@@ -8,11 +8,9 @@
         <div class="table table-striped">
             <table>
                 <th>Your daily quotation</th>
-                {% for quotation in quotations %}
                 <tr>
-                    <td>{{ quotation.contents }}</td>
+                    <td>{{ random_quotation.contents }}</td>
                 </tr>
-                {% endfor %}
             </table>
         </div>
     </div>
