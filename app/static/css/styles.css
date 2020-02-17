@@ -1,24 +1,20 @@
 header {
-    background-color: #358597;
-}
-
-body {
-    background-color: silver
+    background-color: #080F5B;
 }
 
 h1,
 h2,
 h3 {
-    color: #F4A896
+    color: #15DB95
 }
 
 a {
-    color: #F4A896;
+    color: white;
     padding: 10px
 }
 
 a:hover {
-    color: white;
+    color: #15DB95;
     text-decoration: none;
 }
 
@@ -26,17 +22,17 @@ a:hover {
 /* navbar */
 
 nav {
-    background-color: #358597;
+    background-color: #080F5B;
 }
 
 .navbar-toggler-icon {
-    color: #F4A896;
+    color: white;
     padding-left: 20px;
     font-size: 200%
 }
 
 .navbar-brand {
-    color: #F4A896
+    color: white
 }
 
 .navbar-nav {
@@ -51,9 +47,9 @@ nav {
     margin-right: 20px;
     margin-bottom: 20px;
     padding: 20px;
-    border: solid 5px #F4A896;
+    border: solid 5px #15DB95;
     border-style: outset;
-    background-color: #358597
+    background-color: #080F5B;
 }
 
 
@@ -67,28 +63,27 @@ form {
 label {
     font-weight: bold;
     font-size: 1.5em;
-    color: #F4A896
+    color: white
 }
 
 input,
 textarea {
-    background-color: silver;
-    border: solid 1px #f4A896;
-    width: 100%
+    border: solid 1px #F4E4C1;
+    width: 100%;
 }
 
 
 /* table */
 
 .table {
-    color: silver;
+    color: white;
     padding: 10px
 }
 
 td,
 th {
     padding: 10px;
-    border: solid #F4A896 2px;
+    border: solid white 2px;
     max-width: 300px
 }
 
@@ -96,8 +91,7 @@ th {
 /* buttons */
 
 button.save.btn.btn-default {
-    background-color: #F4A896;
-    color: #358597;
+    background-color: #15DB95;
     margin: 10px
 }
 
@@ -110,5 +104,5 @@ button.save.btn.btn-default:hover {
 
 li {
     list-style-type: none;
-    color: #F4A896
+    color: white
 }
