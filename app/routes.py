@@ -9,7 +9,8 @@ def index():
     user = User.query.get(1)
     tasks = user.tasks
     quotations = Quotation.query.all()
-    return render_template('index.html', title='Home', user=user, tasks=tasks, quotations=quotations)
+    random_quotation = random.choice(quotations)
+    return render_template('index.html', title='Home', user=user, tasks=tasks, random_quotation=random_quotation)
 
 @app.route('/tasks', methods=['POST'])
 def create_task():
@@ -31,6 +32,13 @@ def update(task_id):
 @app.route('/quotations')
 def quotations():
     quotations = Quotation.query.all()
-    random_quotation = random.choice(quotations)
-    return render_template('quotations.html', title="Quotations", random_quotation=random_quotation)
+    return render_template('quotations.html', title="Quotations", quotations=quotations)
 
+@app.route('/quotations', methods=['POST'])
+def create_quotation():
+    user = Quotation.query.get(1)
+    quotationContents = request.form['contents']
+    newQuotation = Quotation(contents=quotationContents)
+    db.session.add(newQuotation)
+    db.session.commit()
+    return redirect('/quotations') 

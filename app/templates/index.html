@@ -3,6 +3,7 @@
 <div class='container-fluid'>
     <div class="row">
         <h1>Hi, {{ user.username }}!</h1>
+        <h2>Thought for the day: {{ random_quotation.contents}} </h2>
     </div>
 
     <div class="row">
@@ -17,9 +18,9 @@
     </div>
 
     <div class="row">
-        <div class="col-sm-12">
+        <div class="col-sm-6">
             <h2>Your tasks</h2>
-            <div class="table table-striped table-responsive">
+            <div class="table table-striped table-responsive-sm">
                 <table>
                     <th>Task</th>
                     <th>Description</th>

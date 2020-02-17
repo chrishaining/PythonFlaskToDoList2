@@ -1,5 +1,5 @@
 body {
-    background-color: #358597
+    /* background-color: #358597 */
 }
 
 h1,
@@ -20,6 +20,10 @@ a:hover {
 
 
 /* navbar */
+
+nav {
+    background-color: #358597
+}
 
 .navbar-toggler-icon {
     color: #F4A896;
@@ -44,6 +48,7 @@ a:hover {
     margin-bottom: 20px;
     padding: 20px;
     border: solid 5px #F4A896;
+    background-color: #358597
 }
 
 
@@ -75,9 +80,11 @@ textarea {
     padding: 10px
 }
 
-td {
+td,
+th {
     padding: 10px;
     border: solid #F4A896 2px;
+    max-width: 300px
 }
 
 
@@ -91,4 +98,12 @@ button.save.btn.btn-default {
 
 button.save.btn.btn-default:hover {
     color: white;
+}
+
+
+/* lists */
+
+li {
+    list-style-type: none;
+    color: #F4A896
 }

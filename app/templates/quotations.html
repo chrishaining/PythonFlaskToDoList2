@@ -3,10 +3,26 @@
 <div class='container-fluid'>
     <div class="row">
         <div class="col">
-            <h2>Your daily quotation: </h2>
-            <h3>{{ random_quotation.contents }}</h3>
+            <h2>Your quotations: </h2>
+            <ul>
+                {% for quotation in quotations %}
+                <li>
+                    {{ quotation.contents }}
+                </li>
+                {% endfor %}
+            </ul>
         </div>
     </div>
+
+    <div class="row">
+        <h2>Add a quotation</h2>
+        <form action="/quotations" method="POST">
+            <label for="contents">Write your quotation here:</label>
+            <textarea name="contents" id="contents" rows="4" cols="40"></textarea>
+            <button type="submit" class="save btn btn-default" value="Add Task">Save quotation</button>
+        </form>
+    </div>
+
 </div>
 
 {% endblock %}
