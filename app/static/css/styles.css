@@ -1,5 +1,9 @@
+header {
+    background-color: #358597;
+}
+
 body {
-    /* background-color: #358597 */
+    background-color: silver
 }
 
 h1,
@@ -9,7 +13,7 @@ h3 {
 }
 
 a {
-    color: silver;
+    color: #F4A896;
     padding: 10px
 }
 
@@ -22,7 +26,7 @@ a:hover {
 /* navbar */
 
 nav {
-    background-color: #358597
+    background-color: #358597;
 }
 
 .navbar-toggler-icon {
@@ -48,6 +52,7 @@ nav {
     margin-bottom: 20px;
     padding: 20px;
     border: solid 5px #F4A896;
+    border-style: outset;
     background-color: #358597
 }
 
